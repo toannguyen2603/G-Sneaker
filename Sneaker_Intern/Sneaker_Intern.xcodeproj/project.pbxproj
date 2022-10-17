@@ -7,25 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04E4AA0F28FDBAC6001A752A /* TransformColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA0E28FDBAC6001A752A /* TransformColor.swift */; };
+		04E4AA1128FDBF59001A752A /* YourCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA1028FDBF59001A752A /* YourCartViewController.swift */; };
+		04E4AA1728FDC00C001A752A /* YourCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA1528FDC00C001A752A /* YourCartTableViewCell.swift */; };
+		04E4AA1828FDC00C001A752A /* YourCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E4AA1628FDC00C001A752A /* YourCartTableViewCell.xib */; };
+		04E4AA2328FDE7B8001A752A /* Sneaker_Intern.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA2128FDE7B8001A752A /* Sneaker_Intern.xcdatamodeld */; };
+		04E4AA2B28FDE93F001A752A /* ProductItemMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA2928FDE93F001A752A /* ProductItemMO+CoreDataClass.swift */; };
+		04E4AA2C28FDE93F001A752A /* ProductItemMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA2A28FDE93F001A752A /* ProductItemMO+CoreDataProperties.swift */; };
 		04FBD01128FD722200CA3AA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBD01028FD722200CA3AA3 /* AppDelegate.swift */; };
 		04FBD01328FD722200CA3AA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBD01228FD722200CA3AA3 /* SceneDelegate.swift */; };
 		04FBD01528FD722200CA3AA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBD01428FD722200CA3AA3 /* ViewController.swift */; };
 		04FBD01828FD722200CA3AA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FBD01628FD722200CA3AA3 /* Main.storyboard */; };
-		04FBD01B28FD722200CA3AA3 /* Sneaker_Intern.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04FBD01928FD722200CA3AA3 /* Sneaker_Intern.xcdatamodeld */; };
 		04FBD01D28FD722400CA3AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FBD01C28FD722400CA3AA3 /* Assets.xcassets */; };
 		04FBD02028FD722400CA3AA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FBD01E28FD722400CA3AA3 /* LaunchScreen.storyboard */; };
+		04FBD02C28FD762400CA3AA3 /* shoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 04FBD02B28FD762300CA3AA3 /* shoes.json */; };
+		04FBD02E28FD772700CA3AA3 /* ShoesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBD02D28FD772700CA3AA3 /* ShoesResponse.swift */; };
+		04FBD03128FD7A8900CA3AA3 /* ShoesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBD02F28FD7A8900CA3AA3 /* ShoesTableViewCell.swift */; };
+		04FBD03228FD7A8900CA3AA3 /* ShoesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FBD03028FD7A8900CA3AA3 /* ShoesTableViewCell.xib */; };
+		04FBD03528FD9A8B00CA3AA3 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBD03428FD9A8B00CA3AA3 /* ImageURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04E4AA0E28FDBAC6001A752A /* TransformColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformColor.swift; sourceTree = "<group>"; };
+		04E4AA1028FDBF59001A752A /* YourCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCartViewController.swift; sourceTree = "<group>"; };
+		04E4AA1528FDC00C001A752A /* YourCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCartTableViewCell.swift; sourceTree = "<group>"; };
+		04E4AA1628FDC00C001A752A /* YourCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourCartTableViewCell.xib; sourceTree = "<group>"; };
+		04E4AA2228FDE7B8001A752A /* Sneaker_Intern.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sneaker_Intern.xcdatamodel; sourceTree = "<group>"; };
+		04E4AA2928FDE93F001A752A /* ProductItemMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductItemMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04E4AA2A28FDE93F001A752A /* ProductItemMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductItemMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04FBD00D28FD722200CA3AA3 /* Sneaker_Intern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sneaker_Intern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FBD01028FD722200CA3AA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FBD01228FD722200CA3AA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04FBD01428FD722200CA3AA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04FBD01728FD722200CA3AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04FBD01A28FD722200CA3AA3 /* Sneaker_Intern.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sneaker_Intern.xcdatamodel; sourceTree = "<group>"; };
 		04FBD01C28FD722400CA3AA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FBD01F28FD722400CA3AA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04FBD02128FD722400CA3AA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FBD02B28FD762300CA3AA3 /* shoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shoes.json; sourceTree = "<group>"; };
+		04FBD02D28FD772700CA3AA3 /* ShoesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesResponse.swift; sourceTree = "<group>"; };
+		04FBD02F28FD7A8900CA3AA3 /* ShoesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesTableViewCell.swift; sourceTree = "<group>"; };
+		04FBD03028FD7A8900CA3AA3 /* ShoesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoesTableViewCell.xib; sourceTree = "<group>"; };
+		04FBD03428FD9A8B00CA3AA3 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +61,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E4AA1228FDBF9C001A752A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04E4AA1428FDBFF0001A752A /* Cart */,
+				04E4AA1328FDBFD8001A752A /* Products */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		04E4AA1328FDBFD8001A752A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FBD02F28FD7A8900CA3AA3 /* ShoesTableViewCell.swift */,
+				04FBD03028FD7A8900CA3AA3 /* ShoesTableViewCell.xib */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		04E4AA1428FDBFF0001A752A /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				04E4AA1528FDC00C001A752A /* YourCartTableViewCell.swift */,
+				04E4AA1628FDC00C001A752A /* YourCartTableViewCell.xib */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		04FBD00428FD722200CA3AA3 = {
 			isa = PBXGroup;
 			children = (
+				04E4AA2928FDE93F001A752A /* ProductItemMO+CoreDataClass.swift */,
+				04E4AA2A28FDE93F001A752A /* ProductItemMO+CoreDataProperties.swift */,
 				04FBD00F28FD722200CA3AA3 /* Sneaker_Intern */,
 				04FBD00E28FD722200CA3AA3 /* Products */,
 			);
@@ -58,17 +109,18 @@
 		04FBD00F28FD722200CA3AA3 /* Sneaker_Intern */ = {
 			isa = PBXGroup;
 			children = (
+				04FBD03328FD99A400CA3AA3 /* Extentions */,
+				04FBD02A28FD761600CA3AA3 /* Data */,
 				04FBD02928FD741800CA3AA3 /* Controller */,
 				04FBD02828FD740300CA3AA3 /* View */,
 				04FBD02728FD73FB00CA3AA3 /* Model */,
 				04FBD01028FD722200CA3AA3 /* AppDelegate.swift */,
 				04FBD01228FD722200CA3AA3 /* SceneDelegate.swift */,
-				04FBD01428FD722200CA3AA3 /* ViewController.swift */,
 				04FBD01628FD722200CA3AA3 /* Main.storyboard */,
 				04FBD01C28FD722400CA3AA3 /* Assets.xcassets */,
 				04FBD01E28FD722400CA3AA3 /* LaunchScreen.storyboard */,
 				04FBD02128FD722400CA3AA3 /* Info.plist */,
-				04FBD01928FD722200CA3AA3 /* Sneaker_Intern.xcdatamodeld */,
+				04E4AA2128FDE7B8001A752A /* Sneaker_Intern.xcdatamodeld */,
 			);
 			path = Sneaker_Intern;
 			sourceTree = "<group>";
@@ -76,6 +128,7 @@
 		04FBD02728FD73FB00CA3AA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04FBD02D28FD772700CA3AA3 /* ShoesResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,6 +136,7 @@
 		04FBD02828FD740300CA3AA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04E4AA1228FDBF9C001A752A /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,8 +144,27 @@
 		04FBD02928FD741800CA3AA3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04FBD01428FD722200CA3AA3 /* ViewController.swift */,
+				04E4AA1028FDBF59001A752A /* YourCartViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		04FBD02A28FD761600CA3AA3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04FBD02B28FD762300CA3AA3 /* shoes.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		04FBD03328FD99A400CA3AA3 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				04FBD03428FD9A8B00CA3AA3 /* ImageURL.swift */,
+				04E4AA0E28FDBAC6001A752A /* TransformColor.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +225,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FBD02C28FD762400CA3AA3 /* shoes.json in Resources */,
 				04FBD02028FD722400CA3AA3 /* LaunchScreen.storyboard in Resources */,
+				04E4AA1828FDC00C001A752A /* YourCartTableViewCell.xib in Resources */,
 				04FBD01D28FD722400CA3AA3 /* Assets.xcassets in Resources */,
+				04FBD03228FD7A8900CA3AA3 /* ShoesTableViewCell.xib in Resources */,
 				04FBD01828FD722200CA3AA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,10 +241,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E4AA2B28FDE93F001A752A /* ProductItemMO+CoreDataClass.swift in Sources */,
+				04FBD03128FD7A8900CA3AA3 /* ShoesTableViewCell.swift in Sources */,
 				04FBD01528FD722200CA3AA3 /* ViewController.swift in Sources */,
+				04E4AA0F28FDBAC6001A752A /* TransformColor.swift in Sources */,
+				04E4AA2C28FDE93F001A752A /* ProductItemMO+CoreDataProperties.swift in Sources */,
+				04FBD03528FD9A8B00CA3AA3 /* ImageURL.swift in Sources */,
 				04FBD01128FD722200CA3AA3 /* AppDelegate.swift in Sources */,
+				04E4AA2328FDE7B8001A752A /* Sneaker_Intern.xcdatamodeld in Sources */,
+				04E4AA1128FDBF59001A752A /* YourCartViewController.swift in Sources */,
 				04FBD01328FD722200CA3AA3 /* SceneDelegate.swift in Sources */,
-				04FBD01B28FD722200CA3AA3 /* Sneaker_Intern.xcdatamodeld in Sources */,
+				04E4AA1728FDC00C001A752A /* YourCartTableViewCell.swift in Sources */,
+				04FBD02E28FD772700CA3AA3 /* ShoesResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,6 +436,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,14 +474,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		04FBD01928FD722200CA3AA3 /* Sneaker_Intern.xcdatamodeld */ = {
+		04E4AA2128FDE7B8001A752A /* Sneaker_Intern.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				04FBD01A28FD722200CA3AA3 /* Sneaker_Intern.xcdatamodel */,
+				04E4AA2228FDE7B8001A752A /* Sneaker_Intern.xcdatamodel */,
 			);
-			currentVersion = 04FBD01A28FD722200CA3AA3 /* Sneaker_Intern.xcdatamodel */;
+			currentVersion = 04E4AA2228FDE7B8001A752A /* Sneaker_Intern.xcdatamodel */;
 			path = Sneaker_Intern.xcdatamodeld;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
