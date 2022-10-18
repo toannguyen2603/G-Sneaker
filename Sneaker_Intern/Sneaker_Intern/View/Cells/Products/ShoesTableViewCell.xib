@@ -2,19 +2,29 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Black.ttf">
+            <string>Rubik-Black</string>
+        </array>
+        <array key="Rubik-ExtraBold.ttf">
+            <string>Rubik-ExtraBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoesTableViewCell" rowHeight="675" id="KGk-i7-Jjw" customClass="ShoesTableViewCell" customModule="Sneaker_Intern" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="349" height="675"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoesTableViewCell" rowHeight="698" id="KGk-i7-Jjw" customClass="ShoesTableViewCell" customModule="Sneaker_Intern" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="698"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="349" height="675"/>
+                <rect key="frame" x="0.0" y="0.0" width="349" height="698"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRG-ZY-KWH">
@@ -33,24 +43,24 @@
                             <constraint firstAttribute="height" constant="400" id="wuc-pi-00a"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1O-kt-lRi">
-                        <rect key="frame" x="30" y="450" width="289" height="8"/>
-                        <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1O-kt-lRi">
+                        <rect key="frame" x="30" y="450" width="289" height="31"/>
+                        <fontDescription key="fontDescription" name="Rubik-ExtraBold" family="Rubik" pointSize="25"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="IN5-mZ-Hit">
-                        <rect key="frame" x="30" y="598" width="289" height="47"/>
+                        <rect key="frame" x="30" y="621" width="289" height="47"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI5-zV-Lb1">
-                                <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="47"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI5-zV-Lb1">
+                                <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="47"/>
+                                <fontDescription key="fontDescription" name="Rubik-Black" family="Rubik" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzT-Ey-rdA">
-                                <rect key="frame" x="151.66666666666663" y="0.0" width="137.33333333333337" height="47"/>
-                                <color key="tintColor" red="1" green="0.7922970113709511" blue="0.01039545695538624" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="138.66666666666663" y="0.0" width="150.33333333333337" height="47"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="ADD TO CART"/>
                                 <connections>
@@ -63,11 +73,11 @@
                         </constraints>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8f-cT-OtE">
-                        <rect key="frame" x="30" y="478" width="289" height="100"/>
+                        <rect key="frame" x="30" y="501" width="289" height="100"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="u9g-Wt-QNo"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -97,10 +107,13 @@
                 <outlet property="shoesImage" destination="9rq-Jq-gzM" id="Jvm-ut-sAW"/>
                 <outlet property="titleLabel" destination="V1O-kt-lRi" id="jNu-7g-9T8"/>
             </connections>
-            <point key="canvasLocation" x="216.15384615384616" y="95.616113744075818"/>
+            <point key="canvasLocation" x="216.15384615384616" y="103.7914691943128"/>
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

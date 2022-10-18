@@ -9,9 +9,8 @@ import UIKit
 
 class YourCartViewController: UIViewController {
     
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    var models = [ProductItemMO]()
+    var productManager = ProductManager()
+    var cartManager = CartManager()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,96 +19,118 @@ class YourCartViewController: UIViewController {
         view.backgroundColor = .systemBackground
         setupTableView()
         configureBarItem()
-        print("Hello your cart")
+        productManager.getAllProduct(tableView: tableView.self)
         
-        print(models.count)
-        
-        getAllProduct()
-    
     }
     
     private func setupTableView() {
-        tableView?.delegate = self
-        tableView?.dataSource = self
-        tableView?.register(UINib(nibName: "YourCartTableViewCell", bundle: nil), forCellReuseIdentifier: "YourCartTableViewCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "YourCartTableViewCell", bundle: nil), forCellReuseIdentifier: "YourCartTableViewCell")
     }
     
     private func configureBarItem() {
+        navigationItem.largeTitleDisplayMode = .never
         let logo = UIBarButtonItem.menuButton(self, action: #selector(didTappedRedirectBackHome), imageName: "nikeIcon", width: 60, height: 30)
         self.navigationItem.leftBarButtonItem = logo
+        
     }
     
     @objc func didTappedRedirectBackHome() {
         navigationController?.popViewController(animated: true)
     }
     
-    func getAllProduct() {
-        do {
-            models = try context.fetch(ProductItemMO.fetchRequest())
-            DispatchQueue.main.async {
-                self.tableView?.reloadData()
-            }
-        } catch {
-            // error here
-        }
-    }
     
-    func insertNewProduct(_ data: ResultItem, quanlity: Int) {
-        let newProduct = ProductItemMO(context: context)
-        
-        newProduct.id = Int32(data.id)
-        newProduct.name = data.name
-        newProduct.image = "\(data.image)"
-        newProduct.price = data.price
-        newProduct.color = data.color
-        newProduct.quantity = Int32(quanlity)
-        
-        do {
-            try context.save()
-            print("Save success")
-        } catch { 
-            // error here
-        }
-    }
-    
-    func updateProduct(item: ProductItemMO, quantity: Int) {
-        item.quantity = Int32(quantity)
-        do {
-            try context.save()
-        } catch {
-            // error here
-        }
-    }
-    
-    func deleteProduct(item: ProductItemMO) {
-        context.delete(item)
-        do {
-            try context.save()
-        } catch {
-            
-        }
-    }
-
 }
 extension YourCartViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        if productManager.models.count == 0 {
+            tableView.setMessage("Your cart is empty")
+        } else {
+            tableView.clearBackground()
+        }
+        
+        return productManager.models.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "YourCartTableViewCell", for: indexPath) as? YourCartTableViewCell else {
             fatalError("Faild dequeue resuble cell")
         }
-        print("Hello everyone")
-        let model = models[indexPath.row]
+        let model = productManager.models[indexPath.row]
         cell.config(shoesInfoData: model)
+        cell.delegate = self
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let font = UIFont(name: "HelveticaNeue-Bold", size: 35)!
+
+        let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50)) 
+        let titleLabel = UILabel()
+        titleLabel.text = "Your Cart"
+        titleLabel.font = font
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        header.addSubview(titleLabel)
+        
+        let priceLabel = UILabel()
+        priceLabel.text = "💲\(cartManager.totalPrice(items: productManager.models))"
+        priceLabel.font = UIFont(name: "Rubik-Bold", size: 20)
+        priceLabel.translatesAutoresizingMaskIntoConstraints = false
+        priceLabel.textAlignment = .center
+        header.addSubview(priceLabel)
+        
+        // make constraint layout
+        NSLayoutConstraint.activate([
+            // title
+            titleLabel.topAnchor.constraint(equalTo: header.topAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: header.leadingAnchor, constant: 30),
+            titleLabel.bottomAnchor.constraint(equalTo: header.bottomAnchor),
+            titleLabel.widthAnchor.constraint(equalToConstant: 200),
+            // price
+            priceLabel.topAnchor.constraint(equalTo: header.topAnchor),
+            priceLabel.rightAnchor.constraint(equalTo: header.rightAnchor, constant: -30),
+            priceLabel.bottomAnchor.constraint(equalTo: header.bottomAnchor),
+            priceLabel.widthAnchor.constraint(equalToConstant: 120)
+        ])
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+
 }
+
+extension YourCartViewController: YourCartTableViewCellDelegate {
+    func didTapYourCartDeleteCell(_ cell: YourCartTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        let item = productManager.models[indexPath.row]
+        productManager.deleteProduct(item: item, tableView: tableView.self)
+    }
+    
+    func didTapYourCartPlusQuanlity(_ cell: YourCartTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        let item = productManager.models[indexPath.row]
+        productManager.updateProduct(item: item, quantity: Int(item.quantity) + 1, tableView: tableView.self)
+    }
+    
+    func didTapYourCartMinusQuanlity(_ cell: YourCartTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        let item = productManager.models[indexPath.row]
+        if item.quantity > 1 {
+            productManager.updateProduct(item: item, quantity: Int(item.quantity) - 1, tableView: tableView.self)
+        } else {
+            productManager.deleteProduct(item: item, tableView: tableView.self)
+        }
+    }
+}
+
 
 

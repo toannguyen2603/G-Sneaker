@@ -40,35 +40,34 @@
             <point key="canvasLocation" x="1946" y="-28"/>
         </scene>
         <!--Your Cart View Controller-->
-        <scene sceneID="bfU-T6-bhO">
+        <scene sceneID="pXK-UF-HRa">
             <objects>
-                <viewController storyboardIdentifier="yourcart" id="Nxd-VJ-lYf" customClass="YourCartViewController" customModule="Sneaker_Intern" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iKG-BD-lJb">
+                <viewController storyboardIdentifier="YourCart" id="kJ7-wP-qcO" customClass="YourCartViewController" customModule="Sneaker_Intern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GbX-L5-7iO">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m0S-OR-ulA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wFw-DY-rvD">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="zwV-eT-nZ4"/>
+                        <viewLayoutGuide key="safeArea" id="u2p-E4-wPs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="m0S-OR-ulA" firstAttribute="leading" secondItem="zwV-eT-nZ4" secondAttribute="leading" id="8Cf-Fj-eID"/>
-                            <constraint firstItem="m0S-OR-ulA" firstAttribute="top" secondItem="zwV-eT-nZ4" secondAttribute="top" id="IrU-2p-K5D"/>
-                            <constraint firstItem="zwV-eT-nZ4" firstAttribute="bottom" secondItem="m0S-OR-ulA" secondAttribute="bottom" id="ZxJ-UI-ZyN"/>
-                            <constraint firstItem="zwV-eT-nZ4" firstAttribute="trailing" secondItem="m0S-OR-ulA" secondAttribute="trailing" id="s0b-wH-0FM"/>
+                            <constraint firstItem="u2p-E4-wPs" firstAttribute="bottom" secondItem="wFw-DY-rvD" secondAttribute="bottom" id="JhW-WE-N6Y"/>
+                            <constraint firstItem="u2p-E4-wPs" firstAttribute="trailing" secondItem="wFw-DY-rvD" secondAttribute="trailing" id="Xls-k7-ixS"/>
+                            <constraint firstItem="wFw-DY-rvD" firstAttribute="leading" secondItem="u2p-E4-wPs" secondAttribute="leading" id="d3C-Vz-1vo"/>
+                            <constraint firstItem="wFw-DY-rvD" firstAttribute="top" secondItem="u2p-E4-wPs" secondAttribute="top" id="pag-zG-KO4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Sfn-XH-5Tf"/>
                     <connections>
-                        <outlet property="tableView" destination="m0S-OR-ulA" id="ipm-ON-Akv"/>
+                        <outlet property="tableView" destination="wFw-DY-rvD" id="nYb-FL-9FM"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p6s-qM-iXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lf1-Jg-kjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="-28"/>
+            <point key="canvasLocation" x="2921" y="-32"/>
         </scene>
         <!--Item-->
         <scene sceneID="Hdn-rg-cQI">

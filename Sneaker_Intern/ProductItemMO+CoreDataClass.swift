@@ -2,7 +2,7 @@
 //  ProductItemMO+CoreDataClass.swift
 //  Sneaker_Intern
 //
-//  Created by Nguyễn Hữu Toàn on 18/10/2022.
+//  Created by Nguyễn Hữu Toàn on 17/10/2022.
 //
 //
 

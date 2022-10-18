@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0427953528FE3DD2003C8247 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427953428FE3DD2003C8247 /* ProductManager.swift */; };
+		0427953728FE3F12003C8247 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427953628FE3F12003C8247 /* CartManager.swift */; };
+		0427953928FE6A77003C8247 /* MessagerTalbeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427953828FE6A77003C8247 /* MessagerTalbeView.swift */; };
+		0427953B28FE6AD1003C8247 /* BarButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427953A28FE6AD1003C8247 /* BarButtonCustom.swift */; };
+		0427955928FE7075003C8247 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427954B28FE7074003C8247 /* Rubik-Light.ttf */; };
+		0427955A28FE7075003C8247 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427954C28FE7074003C8247 /* Rubik-Bold.ttf */; };
+		0427955B28FE7075003C8247 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427954D28FE7074003C8247 /* Rubik-Medium.ttf */; };
+		0427955C28FE7075003C8247 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427954E28FE7074003C8247 /* Rubik-BoldItalic.ttf */; };
+		0427955D28FE7075003C8247 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427954F28FE7074003C8247 /* Rubik-SemiBoldItalic.ttf */; };
+		0427955E28FE7075003C8247 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955028FE7074003C8247 /* Rubik-MediumItalic.ttf */; };
+		0427955F28FE7075003C8247 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955128FE7074003C8247 /* Rubik-SemiBold.ttf */; };
+		0427956028FE7075003C8247 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955228FE7074003C8247 /* Rubik-ExtraBold.ttf */; };
+		0427956128FE7075003C8247 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955328FE7074003C8247 /* Rubik-LightItalic.ttf */; };
+		0427956228FE7075003C8247 /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955428FE7075003C8247 /* Rubik-ExtraBoldItalic.ttf */; };
+		0427956328FE7075003C8247 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955528FE7075003C8247 /* Rubik-Italic.ttf */; };
+		0427956428FE7075003C8247 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955628FE7075003C8247 /* Rubik-BlackItalic.ttf */; };
+		0427956528FE7075003C8247 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955728FE7075003C8247 /* Rubik-Regular.ttf */; };
+		0427956628FE7075003C8247 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0427955828FE7075003C8247 /* Rubik-Black.ttf */; };
 		04E4AA0F28FDBAC6001A752A /* TransformColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA0E28FDBAC6001A752A /* TransformColor.swift */; };
 		04E4AA1128FDBF59001A752A /* YourCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA1028FDBF59001A752A /* YourCartViewController.swift */; };
 		04E4AA1728FDC00C001A752A /* YourCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA1528FDC00C001A752A /* YourCartTableViewCell.swift */; };
@@ -28,6 +46,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0427953428FE3DD2003C8247 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		0427953628FE3F12003C8247 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		0427953828FE6A77003C8247 /* MessagerTalbeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagerTalbeView.swift; sourceTree = "<group>"; };
+		0427953A28FE6AD1003C8247 /* BarButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonCustom.swift; sourceTree = "<group>"; };
+		0427954B28FE7074003C8247 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		0427954C28FE7074003C8247 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		0427954D28FE7074003C8247 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		0427954E28FE7074003C8247 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0427954F28FE7074003C8247 /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0427955028FE7074003C8247 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0427955128FE7074003C8247 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		0427955228FE7074003C8247 /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0427955328FE7074003C8247 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		0427955428FE7075003C8247 /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		0427955528FE7075003C8247 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		0427955628FE7075003C8247 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0427955728FE7075003C8247 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		0427955828FE7075003C8247 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
 		04E4AA0E28FDBAC6001A752A /* TransformColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformColor.swift; sourceTree = "<group>"; };
 		04E4AA1028FDBF59001A752A /* YourCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCartViewController.swift; sourceTree = "<group>"; };
 		04E4AA1528FDC00C001A752A /* YourCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCartTableViewCell.swift; sourceTree = "<group>"; };
@@ -61,6 +97,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0427953328FE3DC7003C8247 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0427953428FE3DD2003C8247 /* ProductManager.swift */,
+				0427953628FE3F12003C8247 /* CartManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0427953C28FE6C6B003C8247 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0427955828FE7075003C8247 /* Rubik-Black.ttf */,
+				0427955628FE7075003C8247 /* Rubik-BlackItalic.ttf */,
+				0427954C28FE7074003C8247 /* Rubik-Bold.ttf */,
+				0427954E28FE7074003C8247 /* Rubik-BoldItalic.ttf */,
+				0427955228FE7074003C8247 /* Rubik-ExtraBold.ttf */,
+				0427955428FE7075003C8247 /* Rubik-ExtraBoldItalic.ttf */,
+				0427955528FE7075003C8247 /* Rubik-Italic.ttf */,
+				0427954B28FE7074003C8247 /* Rubik-Light.ttf */,
+				0427955328FE7074003C8247 /* Rubik-LightItalic.ttf */,
+				0427954D28FE7074003C8247 /* Rubik-Medium.ttf */,
+				0427955028FE7074003C8247 /* Rubik-MediumItalic.ttf */,
+				0427955728FE7075003C8247 /* Rubik-Regular.ttf */,
+				0427955128FE7074003C8247 /* Rubik-SemiBold.ttf */,
+				0427954F28FE7074003C8247 /* Rubik-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		04E4AA1228FDBF9C001A752A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +175,8 @@
 		04FBD00F28FD722200CA3AA3 /* Sneaker_Intern */ = {
 			isa = PBXGroup;
 			children = (
+				0427953C28FE6C6B003C8247 /* Fonts */,
+				0427953328FE3DC7003C8247 /* Manager */,
 				04FBD03328FD99A400CA3AA3 /* Extentions */,
 				04FBD02A28FD761600CA3AA3 /* Data */,
 				04FBD02928FD741800CA3AA3 /* Controller */,
@@ -163,6 +231,8 @@
 			children = (
 				04FBD03428FD9A8B00CA3AA3 /* ImageURL.swift */,
 				04E4AA0E28FDBAC6001A752A /* TransformColor.swift */,
+				0427953828FE6A77003C8247 /* MessagerTalbeView.swift */,
+				0427953A28FE6AD1003C8247 /* BarButtonCustom.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -226,11 +296,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FBD02C28FD762400CA3AA3 /* shoes.json in Resources */,
+				0427955F28FE7075003C8247 /* Rubik-SemiBold.ttf in Resources */,
+				0427956428FE7075003C8247 /* Rubik-BlackItalic.ttf in Resources */,
 				04FBD02028FD722400CA3AA3 /* LaunchScreen.storyboard in Resources */,
+				0427955D28FE7075003C8247 /* Rubik-SemiBoldItalic.ttf in Resources */,
 				04E4AA1828FDC00C001A752A /* YourCartTableViewCell.xib in Resources */,
 				04FBD01D28FD722400CA3AA3 /* Assets.xcassets in Resources */,
+				0427956128FE7075003C8247 /* Rubik-LightItalic.ttf in Resources */,
 				04FBD03228FD7A8900CA3AA3 /* ShoesTableViewCell.xib in Resources */,
+				0427955C28FE7075003C8247 /* Rubik-BoldItalic.ttf in Resources */,
+				0427955E28FE7075003C8247 /* Rubik-MediumItalic.ttf in Resources */,
+				0427956228FE7075003C8247 /* Rubik-ExtraBoldItalic.ttf in Resources */,
+				0427955A28FE7075003C8247 /* Rubik-Bold.ttf in Resources */,
+				0427955B28FE7075003C8247 /* Rubik-Medium.ttf in Resources */,
+				0427955928FE7075003C8247 /* Rubik-Light.ttf in Resources */,
+				0427956528FE7075003C8247 /* Rubik-Regular.ttf in Resources */,
+				0427956028FE7075003C8247 /* Rubik-ExtraBold.ttf in Resources */,
 				04FBD01828FD722200CA3AA3 /* Main.storyboard in Resources */,
+				0427956628FE7075003C8247 /* Rubik-Black.ttf in Resources */,
+				0427956328FE7075003C8247 /* Rubik-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +334,12 @@
 				04FBD01128FD722200CA3AA3 /* AppDelegate.swift in Sources */,
 				04E4AA2328FDE7B8001A752A /* Sneaker_Intern.xcdatamodeld in Sources */,
 				04E4AA1128FDBF59001A752A /* YourCartViewController.swift in Sources */,
+				0427953928FE6A77003C8247 /* MessagerTalbeView.swift in Sources */,
+				0427953728FE3F12003C8247 /* CartManager.swift in Sources */,
 				04FBD01328FD722200CA3AA3 /* SceneDelegate.swift in Sources */,
+				0427953B28FE6AD1003C8247 /* BarButtonCustom.swift in Sources */,
 				04E4AA1728FDC00C001A752A /* YourCartTableViewCell.swift in Sources */,
+				0427953528FE3DD2003C8247 /* ProductManager.swift in Sources */,
 				04FBD02E28FD772700CA3AA3 /* ShoesResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +495,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,7 +524,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

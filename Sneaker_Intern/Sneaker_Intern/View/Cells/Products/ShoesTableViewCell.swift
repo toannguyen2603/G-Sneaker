@@ -27,7 +27,7 @@ class ShoesTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        setUpBgView()
+        setUpView()
         let angle = CGFloat.pi*1.9
         shoesImage.transform = shoesImage.transform.rotated(by: angle)
     }
@@ -36,12 +36,16 @@ class ShoesTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setUpBgView() {
+    func setUpView() {
         shoesBgView.layer.masksToBounds = true
         shoesBgView.layer.cornerRadius = 40.0
+        addToCartButton.backgroundColor = .yellow
     }
     
     @IBAction func didTapAddToCart(_ sender: Any) {
+        addToCartButton.isEnabled = false
+        addToCartButton.setImage(UIImage(named: "checkIcon"), for: .normal)
+        addToCartButton.setTitle("", for: .normal)
         delegate?.handerAddItemToCart(_data: self)
     }
     

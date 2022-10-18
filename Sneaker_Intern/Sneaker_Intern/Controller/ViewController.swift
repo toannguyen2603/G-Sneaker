@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     
     var result: ShoesResponse?
-    var cart = YourCartViewController()
+    var cart = ProductManager()
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -56,12 +56,12 @@ class ViewController: UIViewController {
     }
     
     @objc func didTappedReloadTable() {
-        print("hekko")
     }
     
     @objc func goToYourCart(){
-        let vc = YourCartViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        let storyBoard = UIStoryboard(name: "Main", bundle:nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "YourCart") as! YourCartViewController
+        self.navigationController?.pushViewController(vc, animated:true)
     }
     
 
@@ -102,21 +102,4 @@ extension ViewController: ShoesTableViewCellDelegate {
     
 }
 
-
-
-extension UIBarButtonItem {
-    
-    static func menuButton(_ target: Any?, action: Selector, imageName: String, width: CGFloat, height: CGFloat) -> UIBarButtonItem {
-        let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: imageName), for: .normal)
-        button.addTarget(target, action: action, for: .touchUpInside)
-        
-        let barItem = UIBarButtonItem(customView: button)
-        barItem.customView?.translatesAutoresizingMaskIntoConstraints = false
-        barItem.customView?.heightAnchor.constraint(equalToConstant: height).isActive = true
-        barItem.customView?.widthAnchor.constraint(equalToConstant: width).isActive = true
-        
-        return barItem
-    }
-}
 
