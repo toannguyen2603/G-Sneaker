@@ -28,7 +28,7 @@ class YourCartViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "YourCartTableViewCell", bundle: nil), forCellReuseIdentifier: "YourCartTableViewCell")
     }
-    
+
     private func configureBarItem() {
         navigationItem.largeTitleDisplayMode = .never
         let logo = UIBarButtonItem.menuButton(self, action: #selector(didTappedRedirectBackHome), imageName: "nikeIcon", width: 60, height: 30)
@@ -58,16 +58,13 @@ extension YourCartViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "YourCartTableViewCell", for: indexPath) as? YourCartTableViewCell else {
             fatalError("Faild dequeue resuble cell")
         }
+        cell.selectionStyle = .none
         let model = productManager.models[indexPath.row]
         cell.config(shoesInfoData: model)
         cell.delegate = self
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let font = UIFont(name: "HelveticaNeue-Bold", size: 35)!
 
@@ -105,10 +102,14 @@ extension YourCartViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 extension YourCartViewController: YourCartTableViewCellDelegate {
+    
     func didTapYourCartDeleteCell(_ cell: YourCartTableViewCell) {
         guard let indexPath = tableView.indexPath(for: cell) else { return }
         let item = productManager.models[indexPath.row]

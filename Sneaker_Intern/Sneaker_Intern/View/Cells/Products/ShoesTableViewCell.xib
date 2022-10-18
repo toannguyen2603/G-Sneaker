@@ -62,7 +62,9 @@
                                 <rect key="frame" x="138.66666666666663" y="0.0" width="150.33333333333337" height="47"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ADD TO CART"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <color key="baseBackgroundColor" red="1" green="0.79229701139999997" blue="0.01039545696" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapAddToCart:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XNO-zc-ARV"/>
                                 </connections>

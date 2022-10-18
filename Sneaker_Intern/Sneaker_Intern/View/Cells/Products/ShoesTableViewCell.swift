@@ -21,7 +21,8 @@ class ShoesTableViewCell: UITableViewCell {
     @IBOutlet weak var addToCartButton: UIButton!
     
     var shoesData: ResultItem?
-    
+    var isClicked: Bool = false
+
     var delegate: ShoesTableViewCellDelegate?
 
     override func awakeFromNib() {
@@ -39,13 +40,10 @@ class ShoesTableViewCell: UITableViewCell {
     func setUpView() {
         shoesBgView.layer.masksToBounds = true
         shoesBgView.layer.cornerRadius = 40.0
-        addToCartButton.backgroundColor = .yellow
+        addToCartButton.setTitle("ADD TO CART", for: .normal)
     }
     
     @IBAction func didTapAddToCart(_ sender: Any) {
-        addToCartButton.isEnabled = false
-        addToCartButton.setImage(UIImage(named: "checkIcon"), for: .normal)
-        addToCartButton.setTitle("", for: .normal)
         delegate?.handerAddItemToCart(_data: self)
     }
     

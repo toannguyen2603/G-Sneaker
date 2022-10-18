@@ -6,9 +6,11 @@
 //
 
 protocol YourCartTableViewCellDelegate {
+    
     func didTapYourCartDeleteCell(_ cell: YourCartTableViewCell)
     func didTapYourCartPlusQuanlity(_ cell: YourCartTableViewCell)
     func didTapYourCartMinusQuanlity(_ cell: YourCartTableViewCell)
+    
 }
 
 import UIKit
@@ -23,7 +25,7 @@ class YourCartTableViewCell: UITableViewCell {
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
-        
+            
     var productManager = ProductManager()
     
     var delegate: YourCartTableViewCellDelegate?
@@ -57,9 +59,10 @@ class YourCartTableViewCell: UITableViewCell {
         productImage.transform = productImage.transform.rotated(by: angle)
     }
 
-    
     func config(shoesInfoData: ProductItemMO) {
-        productImage.load(url: URL(string: shoesInfoData.image!)!)
+        if let image = shoesInfoData.image {
+            productImage.load(url: URL(string: image)!)
+        }
         titleLabel.text = shoesInfoData.name
         productView.backgroundColor = UIColor.hexStringToUIColor(hex: shoesInfoData.color ?? "")
         priceLabel.text = "💲\(shoesInfoData.price )"

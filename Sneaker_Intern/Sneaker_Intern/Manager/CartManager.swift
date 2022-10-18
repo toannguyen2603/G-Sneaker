@@ -17,4 +17,6 @@ class CartManager {
         let total_string = String(format: "%.2f", total_price)
         return total_string
     }
+    
+    
 }
